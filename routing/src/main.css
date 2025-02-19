@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app {
+    position: absolute;
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app>nav>ul>li {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+#app>div[route-view] {
+    flex: 1;
+}
