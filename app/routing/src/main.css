@@ -14,20 +14,64 @@ body {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    color: #303030;
+}
+
 #app {
     position: absolute;
-    width: 98vw;
-    height: 98vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+#app>nav {
+    display: flex;
+    box-shadow: 0px 1px 3px .1px #eeeeee;
+}
+
+/* Logo Design */
+#app>nav .text-logo {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #303030;
+    cursor: pointer;
+}
+
+#app>nav .text-logo span {
+    color: #ccbf49;
+}
+/* End Logo Design */
+
+#app>nav .nav-links {
+    flex: 1;
+    text-align: right;
+}
+
 #app>nav>ul>li {
     display: inline-block;
-    margin: 0;
+    margin: 4px 0px;
     padding: 10px 20px;
+}
+
+.active-link {
+    color: #5279c5;
+    text-shadow: 0 0 0.1px #303030;
 }
 
 #app>div[route-view] {
     flex: 1;
+}
+
+/* Route View Pages */
+.view-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }

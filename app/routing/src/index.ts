@@ -11,7 +11,8 @@ import NotFound from "./routes/404/notfound";
 
 new Bouer('#app', {
 	config: {
-		usehash: false
+		usehash: false,
+		prefetch: true
 	},
 	components: [
 		Home,

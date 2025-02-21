@@ -12,7 +12,11 @@
 <body>
     <div id="app">
         <nav>
-            <ul>
+            <h3 class="text-logo">
+                <a :href="/">Bou<span>e</span>r</a>
+            </h3>
+
+            <ul class="nav-links">
                 <li>
                     <a :href="/home">Home</a>
                 </li>
@@ -21,7 +25,7 @@
                 </li>
             </ul>
         </nav>
-        <div --silent route-view></div>
+        <div route-view></div>
     </div>
     <script src="./index.js"></script>
 </body>

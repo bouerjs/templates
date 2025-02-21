@@ -1,7 +1,15 @@
-.view-content {
+img {
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+.center-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
+}
+
+p, small {
+	color: #303030;
 }
