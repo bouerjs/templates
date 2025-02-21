@@ -11,8 +11,12 @@
 
 <body>
     <div id="app">
-        <p>Hello 👋</p>
+        <p>Hello👋 from...</p>
         <img src="./assets/images/app.png" alt="Bouer Logo">
+
+        <button on:click="showMessage = !showMessage">Click</button>
+        <br>
+        <small e-show="showMessage">Welcome to your Bouer Blank App</small>
     </div>
     <script src="./index.js"></script>
 </body>

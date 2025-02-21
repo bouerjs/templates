@@ -8,5 +8,8 @@ import './main.css';
 new Bouer('#app', {
 	config: {
 		usehash: false
+	},
+	data: {
+		showMessage: false
 	}
 });
