@@ -45,6 +45,20 @@ module.exports = (env, argv) => {
         },
         exclude: [/node_modules/]
       },
+      { // Processing `sass` files
+        test: /\.s[ac]ss$/i,
+        use: [{ // Output the files
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].css',
+            context: './src',
+          }
+        },
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+        exclude: [/node_modules/]
+      },
       { // Processing other `static` files
         test: /\.(png|jpe?g|gif|svg|eot|otf|ttf|woff|woff2)$/i,
         type: "asset",
@@ -62,6 +76,7 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: ['.ts', '.js']
     },
+
     optimization: {
       minimize: true,
       minimizer: [
@@ -76,9 +91,6 @@ module.exports = (env, argv) => {
         }),
       ],
     },
-    // optimization: {
-    //   runtimeChunk: 'single',
-    // },
     watchOptions: {
       ignored: '**/node_modules',
     },

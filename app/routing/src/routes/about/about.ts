@@ -1,7 +1,7 @@
 import { Component, DataType, dynamic } from 'bouerjs';
 
 import html from './about.html';
-import style from './about.css';
+import style from './about.scss';
 
 export default class About extends Component{
 	constructor() {
