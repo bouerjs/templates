@@ -1,7 +1,7 @@
 import { Component } from 'bouerjs';
 
 import html from './{lower-name}.html';
-import style from './{lower-name}.css';
+import style from './{lower-name}.scss';
 
 class {name} extends Component {
 	constructor() {
