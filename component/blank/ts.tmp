@@ -3,10 +3,10 @@ import { Component } from 'bouerjs';
 import html from './{lower-name}.html';
 import style from './{lower-name}.scss';
 
-class {name} extends Component {
+export default class {name} extends Component {
 	constructor() {
 		super(html, [style]);
 	}
 
 	name = '{name}Component';
-}
+};
