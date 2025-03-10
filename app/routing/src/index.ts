@@ -2,7 +2,6 @@ import Bouer from "bouerjs";
 
 import './assets';
 
-import './index.html';
 import './main.scss';
 
 import About from "./routes/about/about";
