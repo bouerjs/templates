@@ -5,7 +5,7 @@
   "main": "dist/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bouer run --mix-config webpack.config.js", 
+    "start": "bouer run", 
     "build": "bouer build --mode dev",
     "deploy": "bouer build --mode prod"
   },
