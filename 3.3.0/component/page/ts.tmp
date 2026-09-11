@@ -1,0 +1,14 @@
+import { Component } from 'bouerjs';
+
+import html from './{lower-name}.html';
+import style from './{lower-name}.scss';
+
+export default class {name} extends Component {
+	constructor() {
+		super({
+			path: html,
+			title: '{name}',
+			route: '/{lower-name}'
+		}, [style]);
+	}
+};
