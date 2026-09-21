@@ -1,3 +1,11 @@
+declare var require: {
+  context(
+    directory: string,
+    useSubdirectories?: boolean,
+    regExp?: RegExp
+  ): any;
+};
+
 declare module '*.html' {
   const value: string;
   export default value;

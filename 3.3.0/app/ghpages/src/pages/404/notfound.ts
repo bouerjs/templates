@@ -12,5 +12,4 @@ export default class NotFound extends Component {
 			isNotFound: true,
 		}, [style]);
 	}
-
 }

@@ -1,1 +1,2 @@
-require.context('./images/', true, /.*/);
+// Auto import all assets
+require.context('./', true, /.*/);

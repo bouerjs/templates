@@ -1,0 +1,17 @@
+{
+  "name": "routing-app",
+  "version": "1.0.0",
+  "description": "Routing App",
+  "main": "dist/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bouer run", 
+    "build": "bouer build --mode dev",
+    "deploy": "bouer build --mode prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bouerjs": "^3.3.0"
+  }
+}
