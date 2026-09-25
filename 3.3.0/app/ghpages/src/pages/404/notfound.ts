@@ -1,7 +1,7 @@
 import { Component } from 'bouerjs';
 
 import html from './notfound.html';
-import style from './notfound.scss';
+import style from './notfound.css';
 
 export default class NotFound extends Component {
 	constructor() {
